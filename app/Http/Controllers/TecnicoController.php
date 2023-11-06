@@ -63,7 +63,7 @@ class TecnicoController extends Controller
 
         $tecnico->save();
 
-        return redirect()->route('dashboard');
+        return redirect()->route('dashboard', ['data' => $validated]);
     }
 
     /**
